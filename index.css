@@ -1,0 +1,155 @@
+html {
+    display: flex;
+    height: 100vh;
+    font-family: sans-serif;
+  }
+  
+  body {
+    display: flex;
+    flex: 1;
+  }
+  
+  .main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    border: 2px solid lightgrey;
+    height: fit-content;
+  }
+  .modal {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #cacccf65;
+    cursor: pointer;
+  }
+  
+  .hideModal {
+    display: none;
+  }
+  
+  .descClass {
+    margin-top: 10px;
+  }
+  
+  .modalContent {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .modalContent .weatherItemContent {
+    width: 300px;
+    height: 300px;
+    flex-direction: column;
+    display: flex;
+    background: white;
+    padding: 30px;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .modalContent .weatherItemContent .tempClass {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+  }
+  .title {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .filterBar {
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+  }
+  
+  .filterBar input[type="text"] {
+    padding: 5px;
+  }
+  
+  .filterBar input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+  }
+  
+  .filterBar section:first-child a {
+    cursor: pointer;
+    color: blue;
+  }
+  
+  .filterBar section:last-child {
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+  }
+  .filterBar section:last-child label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .filterBar section {
+    flex: 0.5;
+    padding: 10px;
+  }
+  .filterBar section * {
+    margin: 0 5px;
+  }
+  .contentArea {
+    flex: 1;
+    display: inline;
+    padding: 10px;
+  }
+  
+  .contentArea .weatherItem {
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    margin: 10px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .contentArea .weatherItem .weatherItemContent {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    height: 145px;
+    padding: 25px;
+    border: 2px solid #8fb5fb;
+    border-radius: 49px;
+  }
+  
+  .contentArea .weatherItem .weatherItemContent .tempClass {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 60px;
+  }
+  .contentArea .weatherItem .weatherItemContent .tempClass span {
+    color: black;
+  }
+  
+  .green {
+    color: green;
+  }
+  
+  .blue {
+    color: blue;
+  }
+  
+  .red {
+    color: red;
+  }
+  
